@@ -24,11 +24,11 @@ export default async function Home({ searchParams }: SearchParamProps) {
       <section className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
         <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
           <div className="flex flex-col justify-center gap-8">
-            <h1 className="h1-bold">Host, Connect, Celebrate: Your Events, Our Platform!</h1>
-            <p className="p-regular-20 md:p-regular-24">Book and learn helpful tips from 3,168+ mentors in world-class companies with our global community.</p>
+            <h1 className="h1-bold">GwadaEvent : Votre passerelle vers les événements de la Guadeloupe</h1>
+            <p className="p-regular-20 md:p-regular-24">GwadaEvent : Explorez et célébrez la diversité des événements guadeloupéens, du local au culturel, en un seul clic !</p>
             <Button size="lg" asChild className="button w-full sm:w-fit">
               <Link href="#events">
-                Explore Now
+                Explorez Maintenant
               </Link>
             </Button>
           </div>
@@ -44,7 +44,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
       </section> 
 
       <section id="events" className="wrapper my-8 flex flex-col gap-8 md:gap-12">
-        <h2 className="h2-bold">Trust by <br /> Thousands of Events</h2>
+        <h2 className="h2-bold">Votre nouvelle référence<br /> pour les événements guadeloupéens</h2>
 
         <div className="flex w-full flex-col gap-5 md:flex-row">
           <Search />
@@ -53,8 +53,9 @@ export default async function Home({ searchParams }: SearchParamProps) {
 
         <Collection 
           data={events?.data}
-          emptyTitle="No Events Found"
-          emptyStateSubtext="Come back later"
+          emptyTitle="Aucun événement trouvé"
+          emptyStateSubtext="
+          Revenez plus tard"
           collectionType="All_Events"
           limit={6}
           page={page}
